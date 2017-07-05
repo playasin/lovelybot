@@ -2,7 +2,7 @@ from microsoftbotframework import ReplyToActivity
 
 def echo_response(message):
   if message["type"] == "message":
-    
+"""
     data = {
       "documents": [
         {
@@ -34,6 +34,6 @@ def echo_response(message):
       msg = msg + "You look unhappy.."
 
     print(msg)
-
+"""
     ReplyToActivity(fill = message,
                     text = message["text"]).send()
